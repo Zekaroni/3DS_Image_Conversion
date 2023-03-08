@@ -26,4 +26,7 @@ if path.exists('./input'): # Checks if input folder exists
                 tmp_image.save(f'{"./output/" if path.exists("./output") else ""}HNI_{str(ending_num).zfill(4)}.JPG', exif=metadata) # Creates the file with metadata to be read by 3DS
                 remove(f'./input/{image_file}')
         else:
-            print(f'"{image_file}" has an unsupported file extension.')
+            if image_file == "PUT IMAGES HERE":
+                pass # Ignores the basic file placeholder
+            else:
+                print(f'"{image_file}" has an unsupported file extension.')
