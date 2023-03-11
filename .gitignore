@@ -1,5 +1,6 @@
 @Zekaroni
 [
+__pycache__
 .vscode
 3ds_samples
 backups
